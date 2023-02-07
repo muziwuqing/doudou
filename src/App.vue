@@ -2,6 +2,11 @@
 
 import HelloWorld from './components/HelloWorld.vue'
 import TheHeaderVue from './components/TheHeader.vue';
+import {onMounted} from "vue";
+
+onMounted(() => {
+  // clickButton()
+})
 
 function clickButton() {
   console.log(window.screen.width)
@@ -15,7 +20,7 @@ function clickButton() {
 
 <template>
   <div class="img-items">
-    <TheHeaderVue class="img-item"/>
+    <TheHeaderVue/>
   </div>
 
   <div>
